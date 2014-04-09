@@ -28,9 +28,11 @@ gem 'spring',        group: :development
 
 gem 'whenever'
 gem 'treetop-dcf', '~> 0.2.1'
-gem 'httparty',    '~> 0.13.1'
-gem 'pry'
-gem 'rspec-rails'
+
+group :development, :test do
+  gem 'pry'
+  gem 'rspec-rails'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -43,4 +45,3 @@ gem 'rspec-rails'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
